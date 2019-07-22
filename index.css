@@ -1,0 +1,671 @@
+/* 
+
+
+    font-family: 'Dosis', sans-serif;
+
+    font-family: 'Montserrat', sans-serif;
+
+ */
+
+ body{
+     margin: 0;
+     --mainColor: #F8A91D;
+     --textColor: #000000;
+ }
+
+ /* .animator{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #F8A91D;
+    display: block;
+    /* position: fixed; 
+  
+} 
+
+*/
+
+.animated{
+    animation: getBigger 1s 1 alternate-reverse ;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #F8A91D;
+    display: block;
+    position: fixed;
+    transition: 2s;
+}
+#home{
+    background:linear-gradient(to right, #282727e0, rgba(73, 73, 73, 0.897), #262727de), url("./tayoStanding.jpg");
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 110vh;
+
+}
+
+
+
+#glow{
+    text-shadow: 4px 5px 31px var(--mainColor);
+    color: rgb(255, 255, 255);
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    vertical-align: middle;
+}
+
+
+
+nav .navImg{
+   background: url("./headShot.jpg") ;
+   background-position: center;
+   background-size: contain;
+   width: 11em;
+   height: 11em;
+   border-radius: 1000px;
+   border: 2px solid whitesmoke;
+   text-align: left;
+   margin: 0.4em 3em;
+   box-shadow:  9px 5px 21px whitesmoke;
+  
+
+}
+
+nav h1{
+    text-align: right;
+    font-family: 'Dosis', sans-serif;
+    font-size: 4.25em;
+    margin-right: 3em;
+    text-shadow: 9px 5px 21px var(--mainColor);
+    vertical-align: middle;
+    color: white;  
+     
+}
+
+
+
+
+.about{
+    font-family: 'Montserrat', sans-serif;
+    margin: 1em 3em;
+
+   
+}
+
+.about h1{
+    text-align: left;
+    font-family: 'Dosis', sans-serif;
+    font-size: 3em;
+    text-shadow: 9px 5px 21px var(--mainColor);
+    color: white;
+}
+
+.about p{
+    width: 60%;
+    font-size: 1.81em;
+    line-height: 1.3em;
+    color: white;
+    text-shadow: 9px 5px 21px rgba(248, 168, 29, 0.24);
+    margin-bottom: 0;
+}
+
+.contact{
+    margin: 0 3em;
+    display: grid;
+    grid-template-columns: repeat(3, 15%)
+}
+
+.contactCard{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin: 1em 0;
+    width: 10vw;
+    color: var(--textColor);
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    border-radius: 100px;
+    height: 50px;
+    cursor: pointer;
+    
+
+
+    
+}
+
+
+.contactCard img{
+    width: 2.5em;
+    padding: 4px;
+
+}
+
+.social{
+    display: inline;
+    margin: 0em 3em;
+}
+
+.social img{
+    margin-right: 1.32em;
+    width: 32px;
+    display: inline-block;
+}
+
+
+/* About Page DESKTOP! */
+
+#about{
+    display: none;
+}
+#about nav h1{
+    text-align: center;
+    margin: 0;
+    padding: 0.41em 0;
+    font-family: 'Dosis', sans-serif;
+    font-size: 2.95em;
+    text-shadow: 9px 5px 21px  white;
+    color: var(--textColor);
+}
+
+#about nav{
+    display: block
+}
+
+
+
+
+#about .header .headerImg{
+    width: 12em; 
+    height: 12em;
+    background: url("./headShot.jpg");
+    background-position: center;
+    background-size: cover;
+    display: block;
+    text-align: center;
+    margin-left: 42vw;
+    border-radius: 100px;
+    border: 6px solid white;
+}   
+
+#about .header{
+    position: relative;
+    
+}
+
+
+
+#about .header::before{
+    content: "";
+    width: 40vw;
+    left: 30vw;
+    height: 8px;
+    background-color: #F8A91D;
+    display: block;
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+}
+
+#about main{
+    width: 40%;
+    margin: 0 auto;
+    padding: 0%
+}
+
+#aboutMe{
+    font-family: 'Montserrat', sans-serif;
+    width: 50vw;
+    font-size: 1.4em;
+    line-height: 1.5em;
+
+}
+
+#about main .social{
+    padding-left: 12px;
+    margin: 0;
+    display: inline-block;
+}
+
+#about .contactCard{
+    box-shadow:  0px 0px 9px 0.1px  rgba(248, 168, 29, 0.404);
+    margin-top: 4em;
+    margin-right: 13em;
+    
+    
+    
+
+}
+
+#about .contact{
+    width: 80%;
+    text-align: center;
+    grid-template-columns: repeat(3, 45%);
+    padding: 0;
+    margin: 0;
+}
+
+#currentPage{ 
+    opacity: 0.4;
+}
+
+/* Desktop style for Podcast  */
+
+#podcast{   
+    background:linear-gradient(to right, #282727e0, rgba(73, 73, 73, 0.897), #262727de), url("./Tayocome.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 120vh;
+    display: none;
+
+
+}
+
+#podcast nav h1{
+    font-size: 3em;
+    color: white;
+    text-shadow: none;
+
+}
+
+#podcast #yellow{
+    color: var(--mainColor);
+}
+
+
+
+#podcast header{
+    text-align: center;
+}
+
+#podcast header img{
+    width: 8%;
+}
+
+#podcast main {
+
+}
+
+#podcast main i{
+    display: block;
+    font-size: 0.3em;
+}
+
+#podcast main h1{
+    font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
+    width: 30%;
+    color: white;
+    padding-left: 10px;
+
+}
+
+#podcast main p{
+    font-size: 1.3em;
+    font-family: 'Montserrat', sans-serif;
+    width: 40%;
+    color: white;
+    padding-left: 10px;
+    line-height: 1.4em;
+}
+
+#podcast .playButton {
+    background: white;
+    display: inline-block;
+    color: black;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    width: 18vw;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 10px;
+    border-radius: 200px;
+    text-align: center;
+    box-shadow: 0px 0px 19px 0px var(--mainColor);
+    font-weight: bolder;
+    color: var(--textColor);
+    margin-top: 3em;
+}
+
+#podcast .playButton  img{
+    width: 30px;
+    padding: 9px 0px;
+    margin: 4px 3px;
+}
+
+
+
+#podcast .playButton p{
+    font-size: 1.1em;
+    color: var(--textColor);
+    width: 100%;
+    padding: 0px 0px;
+}
+
+
+
+
+
+
+
+/* Responsvness */
+
+/* Tablet */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+   
+   nav h1{
+        font-size: 3.8em;
+        padding: 0;
+        text-align: center;
+        margin-right: 0;
+       
+    }
+
+    nav .navImg{
+        margin: 1.32em 
+    }
+
+    .about p{
+        width: 80%;
+        font-size: 1.6em;
+    }
+
+    .contact{
+        display: grid;
+        grid-column-gap: 5em;
+        width: 90vw;
+    }
+
+    .contactCard{
+        width: 20vw;
+        
+        
+    }
+
+
+/* Responsive for ABOUT  PAGE/ */
+    #about nav{
+        text-align: center;
+    }
+
+    #about nav h1{
+    width: 100vw;
+    color: var(--textColor);
+    text-shadow: none;
+    font-size: 4em;  
+    }
+    
+    
+
+#about .header::before{
+    content: "";
+    width: 80vw;
+    left: 0vw;
+    height: 8px;
+    background-color: #F8A91D;
+    display: block;
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+}
+
+    #about .header .headerImg{
+        width: 12em; 
+        height: 12em;
+        background: url("./headShot.jpg");
+        background-position: center;
+        background-size: cover;
+        display: block;
+        text-align: center;
+        margin-left: 34vw;
+        border-radius: 100px;
+        border: 6px solid white;
+    }   
+
+    #about .header{
+        position: relative;
+    }
+
+
+
+    #about .header::before{
+        content: "";
+        width: 100vw;
+        height: 8px;
+        background-color: #F8A91D;
+        display: block;
+        z-index: -1;
+        position: absolute;
+        top: 50%;
+
+    }
+
+    #aboutMe{
+        font-family: 'Montserrat', sans-serif;
+        width: 90vw;
+        font-size: 1.4em;
+        padding-left: 12px;
+        margin-bottom: 3em;
+        line-height: 1.5em;
+
+    }
+
+    #about main .social{
+        padding-left: 12px;
+        margin: 0;
+    }
+
+    #about main{
+        width: 90%;
+        margin: 0 auto;
+        padding: 0%
+    }
+
+    #about .contact{
+        grid-template-columns: repeat(3, 20%);
+    }
+
+
+    /* Responsive for Tablet */
+
+    #podcast main h1{
+         font-size: 2.63em;
+         width: 50%;
+    }
+
+    #podcast main p{
+        width: 80%;
+    }
+    #podcast .playButton{
+        width: 23%;
+    }
+}
+
+
+/* Mobile */
+@media (min-width: 320px) and (max-width: 480px) {
+  
+    nav h1{
+        font-size: 2.8em;
+        padding: 0;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    nav .navImg{
+        width: 7em;
+        height: 7em;
+        margin: 1em;
+    }
+
+    .about {
+        margin: 0;
+    }
+
+    .about h1{
+        font-size: 2.4em;
+        padding-left: 6px;
+    }
+
+    .about p{
+        width: 90vw;
+        font-size: 1.4em;
+        padding-left: 6px;
+        margin-bottom: 3em;
+    }
+
+    
+    .contact{
+        display: grid;
+        grid-template-columns:  repeat(2, 30%);
+        padding-left: 6px;
+        grid-column-gap: 5em;
+        width: 90vw;
+        margin: 2em 0;
+    }
+
+    .contactCard{
+        width: 40vw;
+    }
+
+    .social{
+        margin: 6px;
+    }
+
+        /* ABOUT PAGE CSS */
+
+       
+ 
+    #about nav{
+        text-align: center;
+        /* display: inline-block; */
+    }
+
+    #about nav h1{
+    width: 100vw;
+    color: var(--textColor);
+    text-shadow: none;      
+    }   
+
+    #about .header .headerImg{
+        width: 9em; 
+        height: 9em;
+        background: url("./headShot.jpg");
+        background-position: center;
+        background-size: cover;
+        display: block;
+        text-align: center;
+        margin-left: 25vw;
+        border-radius: 100px;
+        border: 6px solid white;
+    }   
+
+    #about .header{
+        position: relative;
+    }
+
+
+
+    #about .header::before{
+        content: "";
+        width: 100vw;
+        left: 0;
+        height: 8px;
+        background-color: #F8A91D;
+        display: block;
+        z-index: -1;
+        position: absolute;
+        top: 50%;
+
+    }
+
+    #aboutMe{
+        font-family: 'Montserrat', sans-serif;
+        width: 90vw;
+        font-size: 1.24em;
+        margin-bottom: 3em;
+        line-height: 1.5em;
+
+    }
+
+    #about main{
+        width: 90vw;
+    }
+
+    #about .contact{
+        display: block;
+        width: 100vw;
+    }
+
+
+    #about .contact{
+        display: grid;
+        grid-template-columns:  repeat(2, 30%);
+        padding-left: 6px;
+        grid-column-gap: 5em;
+        width: 90vw;
+        margin: 2em 0;
+    }
+
+    #about .contactCard{
+        width: 40vw;
+        margin: 2em 0;
+    }
+
+
+    /* Responsive for Mobile */
+
+    #podcast{
+        height: 130vh;
+    }
+    #podcast header img{
+        width: 15%;
+    }
+
+    #podcast main p{
+        width: 80%;
+    }
+
+    #podcast .playButton{
+        width: 83%;
+    }
+
+    
+  }
+
+
+
+
+
+
+  /* Animations */
+  @-webkit-keyframes getBigger{
+      from{
+          width: 0vw;
+          height: 0vh;
+          border-radius: 1000px;
+          transform: rotate(50deg);
+          left: -15%
+      }
+
+      to{
+          width: 300vw;
+          height: 300vh;
+          border-radius: 1000px;
+          transform: rotate(50deg);
+          left: -5%;
+      }
+  }
+
+
+  /* rules */
+  #homeBttn{
+      cursor: pointer;
+  }
