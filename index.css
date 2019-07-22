@@ -13,17 +13,7 @@
      --textColor: #000000;
  }
 
- /* .animator{
-    content: "";
-    width: 20px;
-    height: 20px;
-    background-color: #F8A91D;
-    display: block;
-    /* position: fixed; 
-  
-} 
 
-*/
 
 .animated{
     animation: getBigger 1s 1 alternate-reverse ;
@@ -41,7 +31,7 @@
     background-size: cover;
     margin: 0;
     padding: 0;
-    height: 110vh;
+    /* height: 200vh; */
 
 }
 

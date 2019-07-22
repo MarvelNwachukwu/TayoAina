@@ -11,10 +11,10 @@ let animatedButtn = $(".animator");
 homeButtn.forEach(element => {
     $(element).on("click", () =>{
 
-    podcastPage.hide(490);
-    aboutPage.hide(490);
+    podcastPage.hide(0);
+    aboutPage.hide(0);
 
-    homePage.show(500);
+    homePage.show(0);
     animatedButtn.addClass("animated")
     })
 });
@@ -26,20 +26,20 @@ animatedButtn.on("transitionend", function() {
 
 
 podcastButton.on("click", () => {
-    homePage.hide(490);
-    aboutPage.hide(490);
+    homePage.hide(0);
+    aboutPage.hide(0);
 
-    podcastPage.show(500);
+    podcastPage.show(0);
     animatedButtn.addClass("animated")
 
 
 })
 
 aboutButton.on("click", () => {
-    homePage.hide(490);
-    podcastPage.hide(490);
+    homePage.hide(0);
+    podcastPage.hide(0);
 
-    aboutPage.show(500);
+    aboutPage.show(0);
 
     animatedButtn.addClass("animated")
 })
